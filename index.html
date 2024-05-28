@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Películas</h1>
+        <div id="peliculas-list" class="peliculas-list"></div>
+        <button id="add-movie-btn">Agregar Película</button>
+    </div>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Agregar Película</h2>
+            <input type="hidden" id="movie-id">
+            <label for="title">Título:</label>
+            <input type="text" id="title">
+            <label for="director">Director:</label>
+            <input type="text" id="director">
+            <label for="sinopsis">Sinopsis:</label>
+            <textarea id="sinopsis"></textarea>
+            <label for="image">URL de la imagen:</label>
+            <input type="text" id="image">
+            <button id="save-movie-btn">Guardar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
